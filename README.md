@@ -1,2 +1,2 @@
 # Netflix-hystory-love 
-pagina de cartas y hystorias de amor para mi persona amada 
+pagina de cartas y historias de amor para mi persona amada 
