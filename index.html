@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Love – Delvys & Yumiko</title>
+
+<style>
+body {
+    margin: 0;
+    background: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* ANIMACIONES TIPO ANIME */
+@keyframes petals {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+}
+
+.petal {
+    position: fixed;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    background-image: radial-gradient(circle, #ffb7c5, #ff6f91);
+    border-radius: 50%;
+    animation: petals 6s linear infinite;
+    opacity: 0.8;
+}
+
+/* Variaciones */
+.petal:nth-child(1) { left: 10%; animation-duration: 7s; }
+.petal:nth-child(2) { left: 25%; animation-duration: 5s; }
+.petal:nth-child(3) { left: 40%; animation-duration: 6s; }
+.petal:nth-child(4) { left: 55%; animation-duration: 8s; }
+.petal:nth-child(5) { left: 70%; animation-duration: 5.5s; }
+.petal:nth-child(6) { left: 85%; animation-duration: 7.5s; }
+
+@keyframes glowSoft {
+    from { text-shadow: 0 0 10px #ff6f91; }
+    to { text-shadow: 0 0 25px #ffb7c5; }
+}
+
+.glow-soft {
+    animation: glowSoft 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.float {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.heartbeat {
+    animation: heartbeat 2.5s infinite;
+}
+
+/* SECCIONES */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ff6f91;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PÉTALOS ANIME -->
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+
+<!-- TÍTULO -->
+<div class="section">
+    <h1 class="glow-soft">Delvys & Yumiko</h1>
+    <p class="float">Una historia de amor con magia, luz y pétalos flotando.</p>
+</div>
+
+<!-- CAPÍTULOS -->
+<div class="section">
+    <h2 class="heartbeat">Capítulo 1 — La Mejor Decisión</h2>
+    <p class="float">“Elegirte fue la mejor decisión de mi vida.”</p>
+</div>
+
+<div class="section">
+    <h2 class="heartbeat">Capítulo 2 — El Día Que Cambió Mi Mundo</h2>
+    <p class="float">“Transformaste mi vida para siempre.”</p>
+</div>
+
+<div class="section">
+    <h2 class="heartbeat">Capítulo 3 — Tu Abrazo, Mi Hogar</h2>
+    <p class="float">“Tu abrazo es mi lugar seguro.”</p>
+</div>
+
+<div class="section">
+    <h2 class="heartbeat">Capítulo 4 — Amor en los Detalles</h2>
+    <p class="float">“El amor vive en las pequeñas cosas.”</p>
+</div>
+
+</body>
+</html>
 
